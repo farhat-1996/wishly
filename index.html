@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>وشلي | دعاء لمحمد</title>
+  <style>
+    body {
+      background: #fdfaf5;
+      font-family: "Arial", sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #333;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #f5b08d;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .confirmation {
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>اللهم إني أسألك التوفيق في حياتي، وتحقيق أحلامي، وافتح لي أبواب الرزق.</h1>
+
+  <textarea placeholder="اكتب دعاء أو كلمة من قلبك لمحمد"></textarea><br/>
+
+  <label>
+    <input type="checkbox" /> أوافق أن تظهر دعوتي للآخرين (اختياري)
+  </label><br/>
+
+  <button onclick="showMessage()">إرسال الدعاء</button>
+
+  <div class="confirmation" id="msg" style="display:none;">
+    ✔️ تم إرسال دعوتك بنجاح! شكراً لأنك كنت جزءاً من شيء جميل اليوم.
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("msg").style.display = "block";
+    }
+  </script>
+</body>
+</html>
